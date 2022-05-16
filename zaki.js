@@ -2579,7 +2579,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Instagram',
-                                    url: 'https://instagram.com'
+                                    url: 'https://instagram.com/iamkizakixd'
                                 }
                             }, {
                                 callButton: {
