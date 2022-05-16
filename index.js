@@ -20,7 +20,7 @@ async function startZaki() {
     const Zaki = ZakiConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['YouTube FLOB','Safari','1.0.0'],
+        browser: ['OmRull','Safari','1.0.0'],
         auth: state,
         version
     })
@@ -32,7 +32,7 @@ async function startZaki() {
     if (json.content[0].tag == 'offer') {
     let pa7rick = await Zaki.sendContact(callerId, global.owner)
     Zaki.sendMessage(callerId, { text: `Automatic block system!\nDon't call bot!\nPlease contact the owner to open !`}, { quoted : pa7rick })
-    Zaki.sendMessage(`6285878313791@s.whatsapp.net`, {text: `*Report Bot:* Someone Called Bot`})
+    Zaki.sendMessage(`6285859047172@s.whatsapp.net`, {text: `*Report Bot:* Someone Called Bot`})
     await sleep(8000)
     await Zaki.updateBlockStatus(callerId, "block")
     }
